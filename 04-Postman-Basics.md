@@ -1,1 +1,160 @@
+# Postman Basics
 
+## Introduction
+
+Postman is a tool used to send API requests and inspect API responses without using the application itself.
+
+For Product Support Engineers, Postman is a valuable troubleshooting tool that helps verify whether an API is working correctly before escalating issues to Engineering.
+
+---
+
+# Why Product Support Engineers Use Postman
+
+Postman helps support teams:
+
+- Test API endpoints.
+- Verify whether an issue can be reproduced.
+- Inspect API responses.
+- Identify HTTP status codes.
+- Gather technical evidence before escalating issues.
+- Reduce unnecessary Engineering escalations.
+
+---
+
+# How Postman Works
+
+Instead of opening the application, Postman communicates directly with the server.
+
+The workflow looks like this:
+
+Customer Issue
+
+↓
+
+Support Investigation
+
+↓
+
+Postman
+
+↓
+
+API Request
+
+↓
+
+Server
+
+↓
+
+API Response
+
+↓
+
+Support Decision
+
+---
+
+# Common HTTP Methods
+
+## GET
+
+Used to retrieve information.
+
+Example:
+
+Retrieve customer account details.
+
+---
+
+## POST
+
+Used to create new information.
+
+Example:
+
+Create a new customer account.
+
+---
+
+## PUT
+
+Used to update existing information.
+
+Example:
+
+Update customer profile.
+
+---
+
+## DELETE
+
+Used to remove information.
+
+Example:
+
+Delete a customer account.
+
+---
+
+# Example Scenario
+
+### Customer Report
+
+> "I cannot log into my account."
+
+Support Investigation
+
+Instead of immediately escalating the issue, the Product Support Engineer tests the Login API using Postman.
+
+Possible API responses:
+
+**200 OK**
+
+The login service is working.
+
+Continue investigating customer-specific issues.
+
+---
+
+**401 Unauthorized**
+
+The customer's credentials are invalid.
+
+Advise the customer to verify their login details or reset their password.
+
+---
+
+**500 Internal Server Error**
+
+The login service is failing.
+
+Collect evidence and escalate the issue to Engineering.
+
+---
+
+# Benefits of Using Postman
+
+- Confirms whether an API is working.
+- Helps isolate customer issues from server issues.
+- Provides evidence for Engineering teams.
+- Improves troubleshooting efficiency.
+- Supports faster issue resolution.
+
+---
+
+# Key Takeaways
+
+✔ Postman is an API testing tool.
+
+✔ Product Support Engineers use Postman to investigate customer issues.
+
+✔ Postman helps verify API responses before escalating.
+
+✔ HTTP status codes returned in Postman help identify the source of a problem.
+
+✔ Effective use of Postman improves customer support and reduces unnecessary escalations.
+
+---
+
+**Next:** [05-Real-Support-Cases.md](./05-Real-Support-Cases.md)
