@@ -223,6 +223,57 @@ GET https://jsonplaceholder.typicode.com/users/999
 ![404 Not Found](images/postman-404.jpeg)
 
 
+
+---
+
+# Hands-on Practice
+
+## Scenario 1 – Successful API Request (200 OK)
+
+A successful API response confirms that the endpoint is reachable and returns the expected customer data.
+
+![200 OK](images/postman-200-ok.jpeg)
+
+**Support Interpretation**
+
+- API endpoint is healthy.
+- Customer data is returned successfully.
+- No server issue detected.
+- Continue investigating the customer's account if they still report a problem.
+
+---
+
+## Scenario 2 – Authentication Failure (401 Unauthorized)
+
+This response indicates that authentication credentials are missing or invalid.
+
+![401 Unauthorized](images/postman-401-unauthorized.jpeg)
+
+**Support Interpretation**
+
+- Missing API key or invalid credentials.
+- Verify authentication settings.
+- Ask the customer to log in again or regenerate credentials if applicable.
+- Escalate only if valid credentials still return 401.
+
+---
+
+## Scenario 3 – Resource Not Found (404 Not Found)
+
+A 404 response indicates that the requested resource or endpoint cannot be located.
+
+![404 Not Found](images/postman-404-not-found.jpeg)
+
+**Support Interpretation**
+
+- Incorrect endpoint or resource ID.
+- Confirm the URL with documentation.
+- Verify the customer is requesting an existing resource.
+- Escalate only if the endpoint should exist.
+
+
+
+
 ### What I Learned
 
 - A **200 OK** response confirms the request was processed successfully.
