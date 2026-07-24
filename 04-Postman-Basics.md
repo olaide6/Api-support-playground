@@ -195,6 +195,34 @@ GET https://reqres.in/api/users/2
 
 ---
 
+
+### Test 3 — Resource Not Found
+
+**Scenario**
+
+A customer reports that a user profile cannot be loaded.
+
+**Endpoint**
+
+GET https://jsonplaceholder.typicode.com/users/999
+
+**Result**
+
+- Status Code: 404 Not Found
+- The requested resource does not exist.
+- This could happen if the customer requested an invalid resource ID or the resource has been deleted.
+
+**Support Action**
+
+- Verify the resource ID.
+- Ask the customer to confirm the correct information.
+- If the resource should exist but does not, escalate to Engineering.
+
+📷 Screenshot:
+
+![404 Not Found](images/postman-404.jpeg)
+
+
 ### What I Learned
 
 - A **200 OK** response confirms the request was processed successfully.
