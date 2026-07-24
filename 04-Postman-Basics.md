@@ -155,6 +155,52 @@ Collect evidence and escalate the issue to Engineering.
 
 ✔ Effective use of Postman improves customer support and reduces unnecessary escalations.
 
+
+
+## Hands-on Practice (Postman)
+
+I used Postman to understand how Product Support Engineers investigate API responses.
+
+### Test 1 — Successful API Request
+
+**Endpoint**
+GET https://jsonplaceholder.typicode.com/users/1
+
+**Result**
+
+- Status Code: **200 OK**
+- The API returned the requested user information successfully.
+- This confirms the endpoint is available and functioning correctly.
+
+📷 Screenshot:
+
+![200 OK](images/postman-200-ok.png)
+
+---
+
+### Test 2 — Authentication Error
+
+**Endpoint**
+GET https://reqres.in/api/users/2
+
+**Result**
+
+- Status Code: **401 Unauthorized**
+- The response indicated a missing API key.
+- This demonstrates how authentication failures appear during API testing.
+
+📷 Screenshot:
+
+![401 Unauthorized](images/postman-401.png)
+
+---
+
+### What I Learned
+
+- A **200 OK** response confirms the request was processed successfully.
+- A **401 Unauthorized** response usually indicates missing or invalid authentication credentials.
+- Postman helps Product Support Engineers verify whether an issue is caused by authentication or by the application itself before escalating to Engineering.
+
 ---
 
 **Next:** [05-Real-Support-Cases.md](./05-Real-Support-Cases.md)
